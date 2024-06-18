@@ -18,7 +18,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@telegram-mini-apps/tgjs": "^0.0.1",
+    "@telegram-mini-apps/js": "^0.0.1",
     "@telegram-mini-apps/icon": "^0.0.1"
   }
 }
