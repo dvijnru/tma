@@ -1,0 +1,20 @@
+.tgCard {
+    padding: 14px 15px 14px;
+    background-color: var(--tg-theme-section-bg-color);
+    /*overflow: hidden;*/
+    transition: var(--mc-transition-sec);
+}
+.tgCard--full {
+    margin: 0;
+}
+
+
+/**
+ * iOS
+ */
+.tgCard.Card_radius--ios {
+    border-radius: var(--mc-border-radius);
+}
+.tgCard.Card_margin--ios {
+    margin: 4px 16px 12px;
+}

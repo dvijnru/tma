@@ -1,0 +1,20 @@
+{
+  "name": "@telegram-mini-apps/icon",
+  "version": "0.0.1",
+  "description": "Telegram mini apps icon",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dvijnru/tma.git",
+    "directory": "icon"
+  },
+  "author": "wilfrede",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dvijnru/tma/issues"
+  },
+  "homepage": "https://github.com/dvijnru/tma#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}

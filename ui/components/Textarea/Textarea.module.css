@@ -1,0 +1,22 @@
+.tgTextarea {
+    margin-bottom: 10px;
+}
+.tgTextarea:last-child {
+    margin-bottom: 0;
+}
+.Textarea {
+    background-color: var(--tg-theme-secondary-bg-color, #eef3fa);
+    color: var(--tg-theme-text-color);
+    border: 1px solid var(--separator-section-color);
+    /*background: #000;*/
+    /*color: #fff;*/
+    /*border: 1px solid #fff;*/
+    border-radius: var(--mc-border-radius-input);
+    font-size: 16px;
+    padding: 9px 11px;
+    width: 100%;
+    transition: var(--mc-transition-sec);
+}
+.Textarea:hover, .Textarea:active, .Textarea:focus {
+    border: 1px solid var(--tg-theme-subtitle-text-color);
+}

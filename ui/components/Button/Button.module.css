@@ -1,0 +1,81 @@
+.tgButton {
+    user-select: none;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.Button--size-s {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.Button--size-m {
+    padding: 10px 15px;
+    font-size: 16px;
+}
+.Button--size-l {
+    padding: 15px 20px;
+    font-size: 18px;
+}
+
+.Button--appearance-accent {
+    background-color: var(--mc-button-accent-color);
+    color: #fff;
+}
+.Button--appearance-positive {
+    background-color: var(--mc-button-positive-color);
+    color: #fff;
+}
+.Button--appearance-negative {
+    background-color: var(--mc-button-negative-color);
+    color: #fff;
+}
+.Button--mode-link.Button--appearance-negative {
+    color: var(--mc-button-negative-color);
+}
+.Button--appearance-neutral {
+
+}
+.Button--appearance-link {
+    color: var(--tg-theme-text-color);
+}
+
+.Button--mode-primary {
+
+}
+.Button--mode-secondary {
+
+}
+.Button--mode-tertiary {
+
+}
+.Button--mode-outline {
+
+}
+.Button--mode-link {
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+
+.Button--align-left {
+    text-align: left;
+}
+.Button--align-center {
+    text-align: center;
+}
+.Button--align-right {
+    text-align: right;
+}
+
+.Button-width-normal {
+
+}
+.Button--width-full {
+    width: 100%;
+}
+
+.ButtonGroup {
+    margin: 0 15px;
+}

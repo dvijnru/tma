@@ -1,0 +1,38 @@
+.tgSimpleCellLoader {
+    background-color: var(--tg-theme-section-bg-color);
+    display: flex;
+    align-items: center;
+}
+.SimpleCellLoader__content {
+    padding: 12px 10px 12px 0;
+    margin-left: 15px;
+    border-bottom: 1px solid var(--separator-section-color);
+    flex-grow: 1;
+}
+.tgSimpleCellLoader:last-child .SimpleCellLoader__content {
+    border-bottom: none;
+}
+.tgSimpleCellLoader.SimpleCellLoader--bottom-not .SimpleCellLoader__content {
+    border-bottom: none;
+}
+.SimpleCellLoader__before {
+    margin-left: 15px;
+}
+.SimpleCellLoader__content__comment {
+    margin-top: 2px;
+}
+
+/**
+ * iOS
+ */
+.tgSimpleCellLoader.SimpleCellLoader--ios:first-child {
+    border-top-left-radius: var(--mc-border-radius);
+    border-top-right-radius: var(--mc-border-radius);
+}
+.tgSimpleCellLoader.SimpleCellLoader--ios:last-child {
+    border-bottom-left-radius: var(--mc-border-radius);
+    border-bottom-right-radius: var(--mc-border-radius);
+}
+.tgSimpleCellLoader.SimpleCellLoader--bottom-not.SimpleCellLoader--ios {
+    border-radius: var(--mc-border-radius);
+}

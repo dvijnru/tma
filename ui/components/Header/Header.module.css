@@ -1,0 +1,14 @@
+.tgHeader {
+    padding-bottom: 5px;
+    color: var(--tg-theme-section-header-text-color);
+}
+.Header--group {
+    padding: 5px 16px;
+}
+
+/**
+ * iOS
+ */
+.tgHeader.Header--ios .tgHeader {
+    color: var(--tg-theme-subtitle-text-color);
+}

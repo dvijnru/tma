@@ -1,0 +1,9 @@
+.tgOl {
+    padding-left: 20px;
+}
+.tgOl li {
+    padding-bottom: 10px;
+}
+.tgOl li:last-child {
+    padding-bottom: 0;
+}

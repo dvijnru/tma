@@ -1,0 +1,114 @@
+.tgSelect {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.SelectToggle {
+    background-color: var(--tg-theme-secondary-bg-color, #eef3fa);
+    color: var(--tg-theme-text-color);
+    border: 1px solid var(--separator-section-color);
+    /*background: #000;*/
+    /*color: #fff;*/
+    /*border: 1px solid #fff;*/
+    border-radius: var(--mc-border-radius-input);
+    cursor: pointer;
+    padding: 9px 11px;
+    width: 100%;
+    font-size: 16px;
+    transition: var(--mc-transition-sec);
+    display: flex;
+    align-items: center;
+}
+.SelectToggle:hover {
+    border: 1px solid var(--tg-theme-subtitle-text-color);
+}
+.SelectToggle.active {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid var(--tg-theme-subtitle-text-color);
+}
+.SelectToggle--multiple {
+    padding: 0 7px 5px;
+    min-height: 38px;
+}
+
+.SelectToggle-body {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.SelectItem-body--multiple {
+    font-size: 14px;
+    padding: 4px;
+    margin-top: 5px;
+    margin-right: 5px;
+    background-color: var(--tg-theme-section-bg-color);
+    flex-grow: 0!important;
+    border-radius: var(--mc-border-radius-input);
+}
+.SelectToggle-right {
+    color: var(--tg-theme-subtitle-text-color);
+}
+
+.SelectMenu {
+    background-color: var(--tg-theme-section-bg-color);
+    color: var(--mc-text-color);
+    border: 1px solid var(--tg-theme-subtitle-text-color);
+    border-top: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    border-bottom-left-radius: var(--mc-border-radius-input);
+    border-bottom-right-radius: var(--mc-border-radius-input);
+    box-shadow: 0 0 10px 0 var(--mc-background-color);
+    width: 100%;
+    max-height: 300px;
+    overflow: auto;
+}
+
+/*.SelectToggle:hover,*/
+/*.SelectToggle.active {*/
+/*    background-color: var(--mc-block-hover-color);*/
+/*}*/
+
+.SelectItem {
+    padding: 9px 11px;
+    cursor: pointer;
+    transition: var(--mc-transition-sec);
+    display: flex;
+    align-items: center;
+}
+.SelectItem:hover {
+    background-color: var(--tg-theme-section-bg-color);
+    /*background-color: var(--mc-text-color);*/
+    /*opacity: .8;*/
+}
+.SelectItem-img {
+    display: flex;
+    margin-right: 5px;
+}
+.SelectItem-body {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+.SelectItem-right {
+    color: var(--text-confirm-color);
+}
+
+:global(.InputGroup) .tgSelect {
+    width: 50%;
+}
+:global(.InputGroup) .tgSelect:nth-child(1) .SelectToggle {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+:global(.InputGroup) .tgSelect:nth-child(2) .SelectToggle {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

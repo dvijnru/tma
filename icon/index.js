@@ -1,0 +1,19 @@
+export { Icon } from './Icon';
+
+export { IconPrice } from './src/Price';
+export { IconQuestion } from './src/Question';
+export { IconWorld } from './src/World';
+export { IconRight } from './src/Right';
+export { IconCheck } from './src/Check';
+export { IconRefresh } from './src/Refresh';
+export { IconChevronUp } from './src/ChevronUp';
+export { IconChevronDown } from './src/ChevronDown';
+export { IconMessage } from './src/Message';
+export { IconAlert } from './src/Alert';
+export { IconTag } from './src/Tag';
+export { IconAdjustments } from './src/Adjustments';
+export { IconUserGroup } from './src/UserGroup';
+export { IconUserCircle } from './src/UserCircle';
+export { IconHome } from './src/Home';
+export { IconMenu } from './src/Menu';
+export { IconShare } from './src/Share';

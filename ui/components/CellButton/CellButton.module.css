@@ -1,0 +1,74 @@
+.tgCellButton {
+    background-color: var(--tg-theme-section-bg-color);
+    overflow: hidden;
+    /*transition: .1s;*/
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.tgCellButton:hover {
+    background-color: var(--tg-theme-section-bg-hover-color);
+}
+.CellButton__before {
+    margin-left: 15px;
+}
+.CellButton__content {
+    width: calc(100% - 15px);
+    padding: 12px 15px 12px 0;
+    margin-left: 15px;
+    border-bottom: 1px solid var(--separator-section-color);
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tgCellButton:last-child .CellButton__content {
+    border-bottom: none;
+}
+.tgCellButton.CellButton--bottom-not .CellButton__content {
+    border-bottom: none;
+}
+.CellButton__content__body {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.CellButton__content__comment {
+    margin-top: 2px;
+    font-size: 14px;
+    color: var(--tg-theme-subtitle-text-color);
+}
+.CellButton__content__after {
+    color: var(--tg-theme-section-header-text-color);
+    display: flex;
+    align-items: center;
+}
+
+/**
+ * iOS
+ */
+.tgCellButton.CellButton--ios:first-child {
+    border-top-left-radius: var(--mc-border-radius);
+    border-top-right-radius: var(--mc-border-radius);
+}
+.tgCellButton.CellButton--ios:last-child {
+    border-bottom-left-radius: var(--mc-border-radius);
+    border-bottom-right-radius: var(--mc-border-radius);
+}
+.tgCellButton.CellButton--bottom-not.CellButton--ios {
+    border-radius: var(--mc-border-radius);
+}
+
+.CellButton__content__after__ioc-icon-right {
+    margin-left: 5px;
+    color: var(--tg-theme-text-color);
+    opacity: .2;
+}
+.tgCellButton.CellButton--ios .CellButton__content {
+    padding-right: 10px;
+}
+
+
+:global(.dnd-list__draggable.active).tgCellButton {
+    border-radius: 0;
+}

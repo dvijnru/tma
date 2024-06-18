@@ -1,0 +1,71 @@
+.tgSimpleCell {
+    background-color: var(--tg-theme-section-bg-color);
+    overflow: hidden;
+    transition: .1s;
+    display: flex;
+    align-items: center;
+}
+.SimpleCell__before {
+    margin-left: 15px;
+}
+.SimpleCell__content {
+    padding: 12px 15px 12px 0;
+    margin-left: 15px;
+    border-bottom: 1px solid var(--separator-section-color);
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tgSimpleCell:last-child .SimpleCell__content {
+    border-bottom: none;
+}
+.tgSimpleCell.SimpleCell--bottom-not .SimpleCell__content {
+    border-bottom: none;
+}
+.SimpleCell__content__body {
+
+}
+.SimpleCell__content__comment {
+    margin-top: 2px;
+    font-size: 14px;
+    color: var(--tg-theme-subtitle-text-color);
+}
+.SimpleCell__content__after {
+    color: var(--tg-theme-section-header-text-color);
+    display: flex;
+    align-items: center;
+}
+
+/**
+ * iOS
+ */
+/*.tgSimpleCell.SimpleCell--ios .SimpleCell__content {*/
+/*    margin-left: 0;*/
+/*}*/
+.tgSimpleCell.SimpleCell--ios:first-child {
+    border-top-left-radius: var(--mc-border-radius);
+    border-top-right-radius: var(--mc-border-radius);
+}
+.tgSimpleCell.SimpleCell--ios:last-child {
+    border-bottom-left-radius: var(--mc-border-radius);
+    border-bottom-right-radius: var(--mc-border-radius);
+}
+.tgSimpleCell.SimpleCell--bottom-not.SimpleCell--ios {
+    border-radius: var(--mc-border-radius);
+}
+
+.tgSimpleCell.SimpleCell--ios .SimpleCell__content {
+    padding-right: 10px;
+}
+
+
+.SimpleCell--input .SimpleCell__content {
+    margin-left: 0;
+    padding: 0 0 10px;
+    border-bottom: none;
+}
+.SimpleCell--card .SimpleCell__content {
+    margin-left: 0;
+    padding-right: 0;
+}

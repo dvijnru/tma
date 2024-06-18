@@ -1,0 +1,6 @@
+.Label {
+    font-size: 14px;
+    color: var(--tg-theme-subtitle-text-color);
+    margin-bottom: 3px;
+    display: block;
+}

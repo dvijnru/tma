@@ -1,0 +1,40 @@
+.tgPlaceholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.Placeholder--withPadding {
+    padding: 48px 32px;
+}
+
+.Placeholder--stretched {
+    height: 100vh;
+}
+
+.Placeholder__icon {
+    margin-bottom: 12px;
+    display: inline-block;
+    vertical-align: top;
+    color: var(--tg-theme-subtitle-text-color);
+}
+
+.Placeholder__header {
+    font-weight: bold;
+    color: var(--tg-theme-text-color);
+}
+
+.Placeholder__text {
+    color: var(--tg-theme-subtitle-text-color);
+}
+
+.Placeholder__header + .Placeholder__text {
+    margin-top: 8px;
+}
+
+.Placeholder__action:not(:first-child) {
+    margin-top: 16px;
+}

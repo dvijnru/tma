@@ -1,0 +1,23 @@
+.tgAlert {
+    border-radius: var(--mc-border-radius);
+    margin: 0 15px 15px;
+}
+.Alert__content {
+    padding: 14px 15px;
+}
+
+.Alert--appearance-accent {
+    background-color: var(--mc-button-accent-color);
+    color: #fff;
+}
+.Alert--appearance-positive {
+    background-color: var(--mc-button-positive-color);
+    color: #fff;
+}
+.Alert--appearance-negative {
+    background-color: var(--mc-button-negative-color);
+    color: #fff;
+}
+.Alert--appearance-neutral {
+
+}

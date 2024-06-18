@@ -1,0 +1,46 @@
+.tgSpinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+}
+.tgSpinner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--tg-theme-secondary-bg-color, #eef3fa);
+    opacity: .5;
+}
+
+.Spinner__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Spinner__icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--tg-theme-section-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Spinner__icon svg {
+    animation: spinner 3s linear infinite;
+}
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

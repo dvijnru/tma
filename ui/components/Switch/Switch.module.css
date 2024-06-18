@@ -1,0 +1,122 @@
+.tgCheckbox--ios {
+    margin: 0;
+}
+.tgCheckbox--ios .Checkbox--ios--switch {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 48px;
+    height: 28px;
+    border-radius: 28%/50%;
+    vertical-align: top;
+    background: var(--tg-theme-secondary-bg-color);
+    transition: .2s;
+}
+.tgCheckbox--ios .Checkbox--ios--switch:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #fff;
+    transition: .15s;
+}
+.tgCheckbox--ios input[type=checkbox] {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.tgCheckbox--ios input[type=checkbox]:checked + .Checkbox--ios--switch {
+    background: limegreen;
+}
+.tgCheckbox--ios input[type=checkbox]:checked + .Checkbox--ios--switch:before {
+    transform:translateX(20px);
+}
+
+/* Hover */
+.tgCheckbox--ios input[type="checkbox"]:not(:disabled) + .Checkbox--ios--switch {
+    cursor: pointer;
+}
+
+/* Disabled */
+.tgCheckbox--ios input[type=checkbox]:disabled + .Checkbox--ios--switch {
+    filter: grayscale(70%);
+    border-color: rgba(0, 0, 0, .1);
+}
+.tgCheckbox--ios input[type=checkbox]:disabled + .Checkbox--ios--switch:before {
+    background: #eee;
+}
+
+
+
+
+.tgCheckbox {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 10px;
+    position: relative;
+    vertical-align: middle;
+    font-size: 14px;
+    user-select: none;
+}
+.tgCheckbox .Checkbox--switch {
+    display: inline-block;
+    width: 32px;
+    height: 14px;
+    border-radius: 20px;
+    position: relative;
+    top: 6px;
+    vertical-align: top;
+    background: var(--separator-color);
+    transition: .2s;
+}
+.tgCheckbox .Checkbox--switch:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -5px;
+    left: -1px;
+    background: var(--tg-theme-bg-color);
+    border: 2px solid var(--separator-color);
+    border-radius: 50%;
+    transition: .15s;
+}
+.tgCheckbox input[type=checkbox] {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.tgCheckbox input[type=checkbox]:checked + .Checkbox--switch {
+    background-color: var(--tg-theme-button-color);
+}
+.tgCheckbox input[type=checkbox]:checked + .Checkbox--switch:before {
+    border: 2px solid var(--tg-theme-button-color);
+    transform:translateX(11px);
+}
+
+/* Hover */
+.tgCheckbox input[type="checkbox"]:not(:disabled) + .Checkbox--switch {
+    cursor: pointer;
+    border-color: rgba(0, 0, 0, .3);
+}
+
+/* Disabled */
+.tgCheckbox input[type=checkbox]:disabled + .Checkbox--switch {
+    filter: grayscale(60%);
+    border-color: rgba(0, 0, 0, .1);
+}
+.tgCheckbox input[type=checkbox]:disabled + .Checkbox--switch:before {
+    background: #eee;
+}

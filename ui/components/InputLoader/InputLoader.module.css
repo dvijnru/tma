@@ -1,0 +1,16 @@
+.tgInput {
+    margin-bottom: 10px;
+}
+.tgInput:last-child {
+    margin-bottom: 0;
+}
+.tgInputLoader {
+    width: 100%;
+}
+
+:global(.InputGroup) .tgInput {
+    width: 50%;
+}
+:global(.InputGroup) .tgInput:nth-child(2) {
+    margin-left: 3px;
+}
